@@ -1,7 +1,7 @@
 # example
 
 [![Build
-Status](https://travis-ci.org/tcavazos/example.svg?branch=master)](https://travis-ci.org/tcavazos/example)
+Status](https://travis-ci.org/tcavazos2/example.svg?branch=master)](https://travis-ci.org/tcavazos2/example)
 
 Example python project with testing.
 
