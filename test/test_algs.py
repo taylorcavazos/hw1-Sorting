@@ -26,7 +26,6 @@ def test_bubblesort():
     assert np.array_equal(algs.bubblesort(x), sorted(x))
     assert np.array_equal(algs.bubblesort(y), sorted(y))
     assert np.array_equal(algs.bubblesort(z), sorted(z))
-    algs.bubblesort(np.array(["a","b","c"]))
 
 def test_quicksort():
 

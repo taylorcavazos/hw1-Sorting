@@ -12,9 +12,6 @@ def bubblesort(x):
     Sort array by looping through array, swapping unordered 
     adjacent elements until the array is sorted
     """
-    try: np.issubdtype(x, int)
-    except Exception: print("Can only accept integer arrays") 
-
     swapped = True
     while swapped == True:
         swapped = False
