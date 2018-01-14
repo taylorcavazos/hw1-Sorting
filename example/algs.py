@@ -9,10 +9,20 @@ def pointless_sort(x):
 
 def bubblesort(x):
     """
-    Describe how you are sorting `x`
+    Sort array by looping through array, swapping unordered 
+    adjacent elements until the array is sorted
     """
+    try: np.issubdtype(x, int)
+    except Exception: print("Can only accept integer arrays") 
 
-    assert 1 == 1
+    swapped = True
+    while swapped == True:
+        swapped = False
+        for i in range(0, len(x)-1):
+            if x[i] > x[i+1]:
+                temp = x[i]
+                x[i], x[i+1] = x[i+1], temp
+                swapped = True
     return x
 
 def quicksort(x):
