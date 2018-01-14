@@ -23,6 +23,11 @@ def bubblesort(x):
     return x
 
 def partition(x, left, right):
+    """
+    Pivot element is chosen to be the rightmost element in 
+    the array. If array element is less than pivot place it before,
+    if array element is greater place it after the pivot. 
+    """
     pivot = x[right]
     i = left-1
     for j in range(left, right):
@@ -36,7 +41,8 @@ def partition(x, left, right):
 
 def quicksort(x, left, right):
     """
-    Describe how you are sorting `x`
+    Sort array by partitioning into two subarrays at a pivot element (p),
+    then recursively sort the two subarrays.
     """
     if len(x) <= 1:
         return x
