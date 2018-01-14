@@ -28,8 +28,8 @@ def test_bubblesort():
     assert np.array_equal(algs.bubblesort(z), sorted(z))
 
 def test_quicksort():
-
-    x = np.array([1,2,4,0,1])
-    # for now, just attempt to call the quicksort function, should
-    # actually check output
-    algs.quicksort(x)
+    w, x, y, z = np.array([1,2,4,0,1]), np.array([]), np.array([0]), np.array([2,1,0,-1,-2])
+    assert np.array_equal(algs.quicksort(w, 0, len(w)-1), sorted(w))
+    assert np.array_equal(algs.quicksort(x, 0, len(x)-1), sorted(x))
+    assert np.array_equal(algs.quicksort(y, 0, len(y)-1), sorted(y))
+    assert np.array_equal(algs.quicksort(z, 0, len(z)-1), sorted(z))

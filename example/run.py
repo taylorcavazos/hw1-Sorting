@@ -14,4 +14,4 @@ def run_stuff():
     print("Unsorted input: ", x)
 
     print("Bubble sort output: ", bubblesort(x))
-    print("Quick sort output: ", quicksort(x))
+    print("Quick sort output: ", quicksort(x, 0, len(x)-1))
