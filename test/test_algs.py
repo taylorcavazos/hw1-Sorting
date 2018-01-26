@@ -22,14 +22,14 @@ def test_bubblesort():
 
     w, x, y, z = np.array([1,2,4,0,1]), np.array([]), np.array([0]), np.array([2,1,0,-1,-2])
     
-    assert np.array_equal(algs.bubblesort(w), sorted(w))
-    assert np.array_equal(algs.bubblesort(x), sorted(x))
-    assert np.array_equal(algs.bubblesort(y), sorted(y))
-    assert np.array_equal(algs.bubblesort(z), sorted(z))
+    assert np.array_equal(algs.bubblesort(w)[0], sorted(w))
+    assert np.array_equal(algs.bubblesort(x)[0], sorted(x))
+    assert np.array_equal(algs.bubblesort(y)[0], sorted(y))
+    assert np.array_equal(algs.bubblesort(z)[0], sorted(z))
 
 def test_quicksort():
     w, x, y, z = np.array([1,2,4,0,1]), np.array([]), np.array([0]), np.array([2,1,0,-1,-2])
-    assert np.array_equal(algs.quicksort(w, 0, len(w)-1), sorted(w))
-    assert np.array_equal(algs.quicksort(x, 0, len(x)-1), sorted(x))
-    assert np.array_equal(algs.quicksort(y, 0, len(y)-1), sorted(y))
-    assert np.array_equal(algs.quicksort(z, 0, len(z)-1), sorted(z))
+    assert np.array_equal(algs.quicksort(w, 0, len(w)-1, 0, 0)[0], sorted(w))
+    assert np.array_equal(algs.quicksort(x, 0, len(x)-1, 0, 0)[0], sorted(x))
+    assert np.array_equal(algs.quicksort(y, 0, len(y)-1, 0, 0)[0], sorted(y))
+    assert np.array_equal(algs.quicksort(z, 0, len(z)-1, 0, 0)[0], sorted(z))
