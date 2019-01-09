@@ -1,7 +1,7 @@
 # UCSF BMI203 HW #1 Sorting
 
 [![Build
-Status](https://travis-ci.org/tcavazos2/example.svg?branch=master)](https://travis-ci.org/tcavazos2/example)
+Status](https://travis-ci.org/tcavazos2/hw1-Sorting.svg?branch=master)](https://travis-ci.org/tcavazos2/hw1-Sorting)
 
 Example python project with testing.
 
